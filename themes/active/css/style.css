@@ -1,0 +1,138 @@
+/* --------------------------------------
+COLOR PALETTE WITH CSS VARIABLES
+----------------------------------------- */   
+
+:root {
+  --main-bg-color: rgb(195, 218, 230);
+  --main-fg-color: rgb(1, 35, 70);
+  --titles-color: #00AEEF;
+  --bodytext-color: #3F3C39;
+}
+
+body {
+   background-color: var(--main-bg-color);
+   color: var(--bodytext-color);
+   max-width: 90%;
+  }
+
+h1,h2,h3,h4,h5,h6 {
+   color: var( --titles-color);
+}
+
+
+/* --------------------------------------
+RESPONSIVE IMAGES
+----------------------------------------- */  
+
+.thumbnail img {
+  width: 300px;
+  height: 300px;  
+  border: 10px solid #9badbd;  
+  border-radius: 10px;
+}
+
+.home {
+  color: #00AEEF;
+  font-size: 36pt;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  list-style: none;
+}
+
+.home img {
+  width:3rem;
+  height: 3rem;
+  display: block;
+  margin: auto;
+}
+
+.thumbs figure {
+  width: 340px;
+   margin: 2em auto;
+}
+
+.highres figure {
+  width: 900px;
+   margin: 2em auto;
+}
+
+h1 {
+  font-family: 'Concert One', cursive;
+  font-size: 50pt;
+  margin: auto;
+  text-align: center;
+  margin:20px;
+  margin-bottom:40px;
+}
+
+figcaption {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15pt;
+  padding:10px;
+}
+
+figure {
+padding:20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------
+ MEDIA QUERIES FOR LARGER VIEWPORTS
+----------------------------------------- */   
+
+
+@media only screen and (min-width: 576px) { 
+
+    main.thumbs{
+      display: grid;
+      grid-template-columns: 340px;
+      grid-column-gap: 16px;
+}
+}
+
+
+
+/* MEDIUM DEVICES (TABLETS, 768PX AND UP) */
+@media only screen and (min-width: 768px) {
+
+  main.thumbs{
+    display: grid;
+    grid-template-columns: 340px;
+    grid-column-gap: 16px;
+    justify-content: center;
+  }
+}
+
+/* LAPTOPS AND DESKTOPS CAN BE REGULAR OR RETINA DISPLAY  */
+
+@media (min-width: 992px) {
+main.thumbs{
+  display: grid;
+  grid-template-columns: 340px 340px;
+  grid-column-gap: 16px;
+  justify-content: center;
+}
+}
+
+@media (min-width: 1200px) {
+main.thumbs{
+  display: grid;
+  grid-template-columns: 340px 340px;
+  grid-column-gap: 16px;
+  justify-content: center;
+}
+}
+
+@media (min-width: 1400px) {
+main.thumbs{
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-column-gap: 32px;
+  justify-content: center;
+}
+}
+
